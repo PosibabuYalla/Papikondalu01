@@ -2,7 +2,7 @@ export const attractionsData = [
   {
     id: 1,
     name: 'Papikondalu',
-    shortDescription: 'The crown jewel of Godavari tourism with breathtaking views of lush green hills.',
+    shortDescription: 'Papikondalu Attractions The crown jewel of Godavari tourism with breathtaking views of lush green hills.',
     description: 'Often called the crown jewel of Godavari tourism, Papikondalu is a mesmerizing stretch of lush green hills mirrored in the crystal-clear waters of the Godavari River. The serene landscape, with its rolling hills and tranquil river cruises, creates a picture-perfect escape for travelers seeking peace, adventure, or simply the joy of being close to nature.Papikondalu is not just a destination—it’s an experience of breathtaking beauty, where every bend of the river reveals a new view worth capturing. Whether you are a photography enthusiast, a nature lover, or someone looking for quiet contemplation, this scenic wonder promises memories that last a lifetime.',
     image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980788/PAPI-KONDALU_wswdud.jpg',
     gallery: [
