@@ -16,6 +16,7 @@ import SEOMetadata from './components/SEOMetadata'
 import TitleOptimizer from './components/TitleOptimizer'
 import SEOAudit from './components/SEOAudit'
 import WordCountOptimizer from './components/WordCountOptimizer'
+import HeadingOptimizer from './components/HeadingOptimizer'
 import Script from 'next/script'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
@@ -282,6 +283,7 @@ export default function RootLayout({
         <SEOMetadata />
         <TitleOptimizer />
         <SEOAudit />
+        <HeadingOptimizer />
         <SEOEnhancer />
         <ViewportOptimizer />
         <CriticalPerformance />
