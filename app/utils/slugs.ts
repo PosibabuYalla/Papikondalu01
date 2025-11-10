@@ -1,26 +1,26 @@
 // SEO-friendly URL slugs for attractions and packages
 
 export const attractionSlugs = {
-  1: 'papikondalu-hills-godavari-cruise',
-  2: 'perantalapalli-village-culture',
-  3: 'gandipochamma-temple-spiritual',
-  4: 'bhadrachalam-temple-rama',
+  1: 'papikondalu',
+  2: 'perantalapalli',
+  3: 'gandipochamma-temple',
+  4: 'bhadrachalam',
   5: 'sirivaka-night-stay-camping',
-  6: 'maredumilli-waterfalls-forest',
-  7: 'parnasala-ramayana-heritage',
-  8: 'gudisa-hills-trekking-adventure'
+  6: 'maredumilli',
+  7: 'parnasala',
+  8: 'gudisa'
 }
 
 export const packageSlugs = {
-  1: 'papikondalu-river-cruise-package',
-  2: 'bhadradri-temple-godavari-cruise-tour',
-  3: 'maredumilli-waterfalls-adventure-package',
-  4: 'rampachodavaram-tribal-culture-tour',
-  5: 'rajahmundry-papikondalu-day-tour',
-  6: 'sirivaka-night-stay-camping-package',
-  7: 'parnasala-heritage-temple-tour',
-  8: 'gudisa-hills-trekking-tour-package',
-  9: 'perantalapalli-eco-tour-package'
+  1: 'papikondalu-pakages',
+  2: 'bhadradrachalam-papikondalu-pakages',
+  3: 'maredumilli-pakages',
+  4: 'rampachodavaram-waterfalls-tour-package',
+  5: 'rajahmundry-papikondalu-pakages',
+  6: 'sirivaka-night-stay-package',
+  7: 'parnasala-pakages',
+  8: 'gudisa-packages',
+  9: 'perantalapalli-packages'
 }
 
 // Reverse mapping for slug to ID conversion
