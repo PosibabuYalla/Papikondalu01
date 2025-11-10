@@ -19,11 +19,25 @@ const nextConfig = {
   reactStrictMode: false,
   compress: true,
   poweredByHeader: false,
-  trailingSlash: true,
+  trailingSlash: false,
 
 
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
+  },
+  async redirects() {
+    return [
+      {
+        source: '/home',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/about',
+        destination: '/aboutus',
+        permanent: true,
+      },
+    ]
   },
   headers: async () => [
     {
@@ -41,10 +55,23 @@ const nextConfig = {
           key: 'X-XSS-Protection',
           value: '1; mode=block',
         },
+        {
+          key: 'Referrer-Policy',
+          value: 'strict-origin-when-cross-origin',
+        },
       ],
     },
     {
       source: '/(.*)\\.(jpg|jpeg|png|webp|avif|gif|svg|ico)',
+      headers: [
+        {
+          key: 'Cache-Control',
+          value: 'public, max-age=31536000, immutable',
+        },
+      ],
+    },
+    {
+      source: '/_next/static/(.*)',
       headers: [
         {
           key: 'Cache-Control',

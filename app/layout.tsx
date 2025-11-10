@@ -12,6 +12,10 @@ import CriticalPerformance from './components/CriticalPerformance'
 import ViewportOptimizer from './components/ViewportOptimizer'
 import SEOEnhancer from './components/SEOEnhancer'
 import ContentOptimizer from './components/ContentOptimizer'
+import SEOMetadata from './components/SEOMetadata'
+import TitleOptimizer from './components/TitleOptimizer'
+import SEOAudit from './components/SEOAudit'
+import WordCountOptimizer from './components/WordCountOptimizer'
 import Script from 'next/script'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
@@ -94,11 +98,6 @@ export const metadata: Metadata = {
     yahoo: 'your-yahoo-verification-code',
   },
   alternates: {
-    canonical: 'https://bhadradripapikondalu.com',
-    languages: {
-      'en': 'https://bhadradripapikondalu.com',
-      'x-default': 'https://bhadradripapikondalu.com'
-    },
     types: {
       'application/rss+xml': 'https://bhadradripapikondalu.com/feed.xml'
     }
@@ -272,9 +271,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://res.cloudinary.com" />
         <link rel="dns-prefetch" href="https://djmcbqzqt.cloudinary.com" />
 
-        <link rel="canonical" href="https://bhadradripapikondalu.com" />
-        <link rel="alternate" href="https://bhadradripapikondalu.com" hrefLang="en" />
-        <link rel="alternate" href="https://bhadradripapikondalu.com" hrefLang="x-default" />
+
 
         <meta name="msapplication-TileColor" content="#0f172a" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -282,6 +279,9 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
       </head>
       <body className="font-sans antialiased">
+        <SEOMetadata />
+        <TitleOptimizer />
+        <SEOAudit />
         <SEOEnhancer />
         <ViewportOptimizer />
         <CriticalPerformance />
@@ -293,6 +293,7 @@ export default function RootLayout({
         <FloatingActionButton />
         <main className="relative" role="main">{children}</main>
         <ContentOptimizer />
+        <WordCountOptimizer />
         <Footer />
         <LazyMultiAgentWidget />
         <SpeedInsights />

@@ -9,11 +9,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const mainPages = [
     { url: baseUrl, priority: 1.0, changeFrequency: 'daily' as const },
     { url: `${baseUrl}/aboutus`, priority: 0.9, changeFrequency: 'weekly' as const },
-    { url: `${baseUrl}/blog`, priority: 0.85, changeFrequency: 'daily' as const },
     { url: `${baseUrl}/attractions`, priority: 0.95, changeFrequency: 'daily' as const },
     { url: `${baseUrl}/packages`, priority: 0.95, changeFrequency: 'daily' as const },
     { url: `${baseUrl}/gallery`, priority: 0.8, changeFrequency: 'weekly' as const },
     { url: `${baseUrl}/contact`, priority: 0.85, changeFrequency: 'monthly' as const },
+    { url: `${baseUrl}/privacy`, priority: 0.3, changeFrequency: 'yearly' as const },
+    { url: `${baseUrl}/terms`, priority: 0.3, changeFrequency: 'yearly' as const },
   ]
 
   // All attraction pages
@@ -32,8 +33,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }))
 
-  // Blog pages (placeholder for future blog posts)
-  const blogPages: any[] = []
+  // Blog pages
+  const blogPages = [
+    { url: `${baseUrl}/blog`, priority: 0.85, changeFrequency: 'daily' as const },
+    { url: `${baseUrl}/blog/papikondalu-bhadradri-magical-beauty`, priority: 0.7, changeFrequency: 'weekly' as const },
+  ]
 
   // SEO landing pages - Papikondalu focused
   const seoLandingPages = [

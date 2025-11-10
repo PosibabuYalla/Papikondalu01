@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     }]
   },
   alternates: {
-    canonical: 'https://papikondalutourism.com/aboutus'
+    canonical: 'https://bhadradripapikondalu.com/aboutus'
   }
 }
 
@@ -30,14 +30,14 @@ export default function AboutUs() {
   const aboutUsSchema = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
-    '@id': 'https://papikondalutourism.com/aboutus#webpage',
-    'url': 'https://papikondalutourism.com/aboutus',
+    '@id': 'https://bhadradripapikondalu.com/aboutus#webpage',
+    'url': 'https://bhadradripapikondalu.com/aboutus',
     'name': 'About Papikondalu Tourism',
     'isPartOf': {
-      '@id': 'https://papikondalutourism.com/#website'
+      '@id': 'https://bhadradripapikondalu.com/#website'
     },
     'about': {
-      '@id': 'https://papikondalutourism.com/#organization'
+      '@id': 'https://bhadradripapikondalu.com/#organization'
     },
     'description': 'Learn about Papikondalu Tourism\'s 20+ years journey in river tourism, our modern fleet, and commitment to excellence.',
     'breadcrumb': {
@@ -47,13 +47,13 @@ export default function AboutUs() {
           '@type': 'ListItem',
           'position': 1,
           'name': 'Home',
-          'item': 'https://papikondalutourism.com'
+          'item': 'https://bhadradripapikondalu.com'
         },
         {
           '@type': 'ListItem',
           'position': 2,
           'name': 'About Us',
-          'item': 'https://papikondalutourism.com/aboutus'
+          'item': 'https://bhadradripapikondalu.com/aboutus'
         }
       ]
     },
